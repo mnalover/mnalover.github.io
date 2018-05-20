@@ -78,7 +78,7 @@ var AllowRegex  = /^[\ba-zA-Z\s-]$/;
 
 <div class="container">
   <h2>Sign in</h2>
-    <form name="myForm" method="get">
+    <form name="myForm" action="calculator.html" method="get">
 <p>Name: <input type="text" class="form-control" onkeypress="return textonly(event);" placeholder="Enter Your Name (You can only write text in this field ! )" id="name" required></p>
 <p>Last Name: <input type="text" class="form-control" onkeypress="return textonly(event);" placeholder="Enter Your Last Name (You can only write text in this field ! )" id="name" required></p>
 <p>Phone Number: <input type="phonenumber" class="form-control" id="phonenumber" placeholder="Enter Your Phone Number" required></p>
@@ -89,7 +89,7 @@ var AllowRegex  = /^[\ba-zA-Z\s-]$/;
 <p>E-mail:<input type="email" class="form-control" id="email" onblur="validateEmail(this)" placeholder="Enter email" required></p>        
 <p><label for="psw">Password: </label> <input type="password" id="psw" class="form-control" placeholder="Must contain at least one number and one uppercase and lowercase letter, and should be 6-15 characters long" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,15}" title="Must contain at least one number and one uppercase and lowercase letter, and should be 6-15 characters long" required> </p>        
         
-        <input type="submit" class="form-control" value="Submit" onclick="location.href='calculator.html'">
+        <input type="submit" class="form-control" value="Submit">
         <input type="button" class="form-control" name="reset_form" value="Reset Form" onclick="this.form.reset();">
 </form>
 </div>
